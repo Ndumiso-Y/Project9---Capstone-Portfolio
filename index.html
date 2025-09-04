@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="assets/images/ndu-icon.png">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script defer src="js/script.js"></script>
+
+<title>Ndumiso Yedwa — Portfolio</title>
+</head>
+<body>
+
+<header class="site-header" role="banner">
+  <div class="container nav-container">
+    <a class="brand" href="index.html" aria-label="Home">
+      <img src="assets/images/ndu-icon.png" alt="Ndu icon logo" width="40" height="40" class="brand__logo">
+      <span class="brand__text">Ndumiso&nbsp;Yedwa</span>
+    </a>
+
+    <button id="navToggle" class="nav-toggle" aria-label="Toggle navigation" aria-controls="siteNav" aria-expanded="false">
+      <span class="nav-toggle__bar"></span>
+      <span class="sr-only">Menu</span>
+    </button>
+
+    <nav id="siteNav" class="site-nav" aria-label="Primary">
+      <ul class="site-nav__list">
+        <li><a href="about.html">About</a></li>
+        <li><a href="websites.html">Websites</a></li>
+        <li><a href="graphics.html">Graphics</a></li>
+        <li><a href="design-work.html">Design&nbsp;Work</a></li>
+        <li><a href="social.html">Social&nbsp;Media</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="badges.html">Badges</a></li>
+              <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main" class="main">
+  <!-- Hero -->
+  <section class="hero" aria-label="Intro">
+    <div class="container hero__grid">
+      <div class="hero__text">
+        <h1 class="hero__title">Hello! I’m <span class="accent">Ndumiso Yedwa</span></h1>
+        <p class="hero__subtitle">Web Designer &amp; Front-End Developer</p>
+        <p class="lead">Founder of Embark Digitals — building fast, modern websites, branding, and digital assets.</p>
+        <ul class="checklist" role="list">
+          <li>Clean UI &amp; brand consistency</li>
+          <li>Conversion-focused messaging</li>
+          <li>Reliable delivery</li>
+                <li><a href="contact.html">Contact</a></li>
+      </ul>
+        <div class="cta-row">
+          <a class="btn btn--solid" href="websites.html">View Work</a>
+        </div>
+      </div>
+      <div class="hero__media">
+        <figure class="portrait">
+          <img src="assets/images/ndu-portrait.jpg" width="400" height="400" alt="Portrait of Ndumiso Yedwa" onerror="handleImgError(this)" />
+          <figcaption class="sr-only">Portrait</figcaption>
+        </figure>
+      </div>
+    </div>
+    <div class="hero__bg" aria-hidden="true"></div>
+  </section>
+
+  <!-- About teaser -->
+  <section class="section">
+    <div class="container narrow">
+      <h2>Clarity. Speed. Reliability.</h2>
+      <p>I help SMEs communicate clearly and look world-class online. From discovery to launch, I build responsive, accessible websites that convert and are easy to maintain.</p>
+    </div>
+  </section>
+
+  <!-- At a Glance -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="section-head">
+        <h2>At a Glance</h2>
+        <p class="muted">Quick links to everything on this site.</p>
+      </div>
+      <div class="card-grid four">
+        <a class="card" href="about.html" aria-label="About">
+          <div class="card__media">
+            <img src="assets/images/ndu-portrait.jpg" alt="About Ndumiso portrait" onerror="handleImgError(this)">
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">About</h3>
+            <p class="muted">Values, process, and tools.</p>
+          </div>
+        </a>
+        <a class="card" href="websites.html" aria-label="Websites">
+          <div class="card__media">
+            <img src="assets/images/tvei-shot.jpg" alt="Websites showcase thumbnail" onerror="handleImgError(this)">
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">Websites</h3>
+            <p class="muted">SME sites built for speed and clarity.</p>
+          </div>
+        </a>
+        <a class="card" href="graphics.html" aria-label="Graphics & Brand Work">
+          <div class="card__media">
+            <img src="assets/images/filament-ppt-thumb.jpg" alt="Graphics & brand work deck" onerror="handleImgError(this)">
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">Graphics & Brand</h3>
+            <p class="muted">Logos, decks, and briefs.</p>
+          </div>
+        </a>
+        <a class="card" href="design-work.html" aria-label="Design Work">
+          <div class="card__media">
+            <img src="assets/images/tvei-flyer-01.jpg" alt="Design work flyer" onerror="handleImgError(this)">
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">Design Work</h3>
+            <p class="muted">Flyers, posters, banners.</p>
+          </div>
+        </a>
+        <a class="card" href="social.html" aria-label="Social Media Management">
+          <div class="card__media">
+            <img src="assets/images/tvei-social.jpg" alt="Social media layout preview" onerror="handleImgError(this)">
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">Social Media</h3>
+            <p class="muted">Campaigns and post sets.</p>
+          </div>
+        </a>
+        <a class="card" href="projects.html" aria-label="Treehouse Projects">
+          <div class="card__media">
+            <img src="assets/images/p1-thumb.jpg" alt="Treehouse projects thumbnail" onerror="handleImgError(this)">
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">Treehouse Projects</h3>
+            <p class="muted">8 projects with audio + modals.</p>
+          </div>
+        </a>
+        <a class="card" href="badges.html" aria-label="Badges & Recognition">
+          <div class="card__media">
+            <img src="assets/images/treehouse-with-ndu.jpg" alt="Badges and recognition" onerror="handleImgError(this)">
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">Badges</h3>
+            <p class="muted">Black Umbrellas & Treehouse.</p>
+          </div>
+        </a>
+      
+        <a class="card" href="contact.html" aria-label="Contact">
+          <div class="card__media">
+            <img src="assets/images/ndu-icon.png" alt="Contact icon" onerror="handleImgError(this)">
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">Contact</h3>
+            <p class="muted">Email & socials.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Websites -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <h2>Featured Websites</h2>
+      </div>
+      <div class="card-grid four">
+        <article class="card">
+          <a class="card__media" href="https://www.drbmfnkabinde.com/" target="_blank" rel="noopener noreferrer">
+            <img src="assets/images/benzi-shot.jpg" alt="Being Dr Benzi website" onerror="handleImgError(this)">
+          </a>
+          <div class="card__body">
+            <h3 class="card__title">Being Dr Benzi</h3>
+            <a class="btn btn--link" href="https://www.embarkdigitals.com/" target="_blank" rel="noopener noreferrer">Visit site</a>
+          </div>
+        </article>
+        <article class="card">
+          <a class="card__media" href="https://ndumiso-y.github.io/vlc-website/" target="_blank" rel="noopener noreferrer">
+            <img src="assets/images/vlc-shot.jpg" alt="VLC Construction website" onerror="handleImgError(this)">
+          </a>
+          <div class="card__body">
+            <h3 class="card__title">VLC Construction</h3>
+            <a class="btn btn--link" href="https://www.embarkdigitals.com/" target="_blank" rel="noopener noreferrer">Visit site</a>
+          </div>
+        </article>
+        <article class="card">
+          <a class="card__media" href="https://ndumiso-y.github.io/village-econonomy-indaba-website/" target="_blank" rel="noopener noreferrer">
+            <img src="assets/images/tvei-shot.jpg" alt="Village Economy Indaba website" onerror="handleImgError(this)">
+          </a>
+          <div class="card__body">
+            <h3 class="card__title">Village Economy Indaba</h3>
+            <a class="btn btn--link" href="https://www.embarkdigitals.com/" target="_blank" rel="noopener noreferrer">Visit site</a>
+          </div>
+        </article>
+        <article class="card">
+          <a class="card__media" href="https://www.embarkdigitals.com/" target="_blank" rel="noopener noreferrer">
+            <img src="assets/images/embark-shot.jpg" alt="Embark Digitals website" onerror="handleImgError(this)">
+          </a>
+          <div class="card__body">
+            <h3 class="card__title">Embark Digitals</h3>
+            <a class="btn btn--link" href="https://www.embarkdigitals.com/" target="_blank" rel="noopener noreferrer">Visit site</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer" role="contentinfo">
+  <div class="container footer-grid">
+    <div>
+      <p class="footer-heading">Embark Digitals</p>
+      <p class="muted">Fast, modern websites, branding, and digital assets.</p>
+    </div>
+    <div>
+      <p class="footer-heading">Links</p>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="websites.html">Websites</a></li>
+              <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="footer-heading">Social</p>
+      <ul class="footer-links">
+        <li><a href="https://www.linkedin.com/" aria-label="LinkedIn">LinkedIn</a></li>
+        <li><a href="https://www.facebook.com/" aria-label="Facebook">Facebook</a></li>
+              <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <small>© <span id="year"></span> Ndumiso Yedwa. Designed by Embark Digitals.</small>
+  </div>
+</footer>
+
+</body>
+</html>

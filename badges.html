@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="assets/images/ndu-icon.png">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script defer src="js/script.js"></script>
+
+<title>Badges &amp; Recognition — Ndumiso Yedwa</title>
+</head>
+<body>
+
+<header class="site-header" role="banner">
+  <div class="container nav-container">
+    <a class="brand" href="index.html" aria-label="Home">
+      <img src="assets/images/ndu-icon.png" alt="Ndu icon logo" width="40" height="40" class="brand__logo">
+      <span class="brand__text">Ndumiso&nbsp;Yedwa</span>
+    </a>
+
+    <button id="navToggle" class="nav-toggle" aria-label="Toggle navigation" aria-controls="siteNav" aria-expanded="false">
+      <span class="nav-toggle__bar"></span>
+      <span class="sr-only">Menu</span>
+    </button>
+
+    <nav id="siteNav" class="site-nav" aria-label="Primary">
+      <ul class="site-nav__list">
+        <li><a href="about.html">About</a></li>
+        <li><a href="websites.html">Websites</a></li>
+        <li><a href="graphics.html">Graphics</a></li>
+        <li><a href="design-work.html">Design&nbsp;Work</a></li>
+        <li><a href="social.html">Social&nbsp;Media</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="badges.html">Badges</a></li>
+              <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main" class="main">
+  <section class="section">
+    <div class="container narrow">
+      <h1>Badges &amp; Recognition</h1>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container two-col">
+      <article class="teaser">
+        <img src="assets/images/bu-letter-snippet.jpg" alt="Black Umbrellas letter snippet" onerror="handleImgError(this)">
+        <div class="teaser__body">
+          <h3>Black Umbrellas</h3>
+          <p>Entrepreneurship support and recognition.</p>
+          <a class="btn btn--solid" href="https://blackumbrellas.org/" target="_blank" rel="noopener">Visit Black Umbrellas</a>
+        </div>
+      </article>
+      <article class="teaser">
+        <img src="assets/images/treehouse-with-ndu.jpg" alt="Treehouse with Ndu" onerror="handleImgError(this)" data-zoom="assets/images/treehouse-with-ndu-large.jpg">
+        <div class="teaser__body">
+          <h3>Treehouse</h3>
+          <p>Front-End Web Development Techdegree.</p>
+          <a class="btn btn--solid" href="#" target="_blank" rel="noopener">See LinkedIn Post</a>
+        </div>
+      </article>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer" role="contentinfo">
+  <div class="container footer-grid">
+    <div>
+      <p class="footer-heading">Embark Digitals</p>
+      <p class="muted">Fast, modern websites, branding, and digital assets.</p>
+    </div>
+    <div>
+      <p class="footer-heading">Links</p>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="websites.html">Websites</a></li>
+              <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="footer-heading">Social</p>
+      <ul class="footer-links">
+        <li><a href="https://www.linkedin.com/" aria-label="LinkedIn">LinkedIn</a></li>
+        <li><a href="https://www.facebook.com/" aria-label="Facebook">Facebook</a></li>
+              <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <small>© <span id="year"></span> Ndumiso Yedwa. Designed by Embark Digitals.</small>
+  </div>
+</footer>
+
+</body>
+</html>

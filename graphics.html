@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="assets/images/ndu-icon.png">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script defer src="js/script.js"></script>
+
+<title>Graphics &amp; Brand Work — Ndumiso Yedwa</title>
+</head>
+<body>
+
+<header class="site-header" role="banner">
+  <div class="container nav-container">
+    <a class="brand" href="index.html" aria-label="Home">
+      <img src="assets/images/ndu-icon.png" alt="Ndu icon logo" width="40" height="40" class="brand__logo">
+      <span class="brand__text">Ndumiso&nbsp;Yedwa</span>
+    </a>
+
+    <button id="navToggle" class="nav-toggle" aria-label="Toggle navigation" aria-controls="siteNav" aria-expanded="false">
+      <span class="nav-toggle__bar"></span>
+      <span class="sr-only">Menu</span>
+    </button>
+
+    <nav id="siteNav" class="site-nav" aria-label="Primary">
+      <ul class="site-nav__list">
+        <li><a href="about.html">About</a></li>
+        <li><a href="websites.html">Websites</a></li>
+        <li><a href="graphics.html">Graphics</a></li>
+        <li><a href="design-work.html">Design&nbsp;Work</a></li>
+        <li><a href="social.html">Social&nbsp;Media</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="badges.html">Badges</a></li>
+              <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main" class="main">
+  <section class="section">
+    <div class="container narrow">
+      <h1>Graphics &amp; Brand Work</h1>
+      <p class="muted">Tap a thumbnail to preview in a modal, then open the PDF.</p>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container">
+      <div class="card-grid three">
+        <article class="card">
+          <button class="card__media" data-modal-open="filamentModal" aria-label="Open Filament Logo preview">
+            <img src="assets/images/filament-ppt-thumb.jpg" alt="Filament logo deck thumbnail" onerror="handleImgError(this)">
+          </button>
+          <div class="card__body">
+            <h3 class="card__title">Filament Logo</h3>
+            <a class="btn btn--solid" href="assets/pdfs/filament-ppt.pdf" target="_blank" rel="noopener">Open PDF</a>
+          </div>
+        </article>
+        <article class="card">
+          <button class="card__media" data-modal-open="liaisonsModal" aria-label="Open Liaisons preview">
+            <img src="assets/images/liaisons-ppt-thumb.jpg" alt="Liaisons presentation thumbnail" onerror="handleImgError(this)">
+          </button>
+          <div class="card__body">
+            <h3 class="card__title">Liaisons Concepts</h3>
+            <a class="btn btn--solid" href="assets/pdfs/liaisons-ppt.pdf" target="_blank" rel="noopener">Open PDF</a>
+          </div>
+        </article>
+        <article class="card">
+          <button class="card__media" data-modal-open="vlcModal" aria-label="Open VLC brief preview">
+            <img src="assets/images/vlc-brief-cover.jpg" alt="VLC brand brief cover" onerror="handleImgError(this)">
+          </button>
+          <div class="card__body">
+            <h3 class="card__title">VLC Brand Brief</h3>
+            <a class="btn btn--solid" href="assets/pdfs/vlc-brand-brief.pdf" target="_blank" rel="noopener">Open PDF</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modals -->
+  <div id="filamentModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="filamentTitle" hidden>
+    <div class="modal__box">
+      <div class="modal__head">
+        <h3 id="filamentTitle">Filament Logo — Preview</h3>
+        <button class="modal__close" data-modal-close aria-label="Close">×</button>
+      </div>
+      <img src="assets/images/filament-ppt-thumb.jpg" alt="" onerror="handleImgError(this)">
+      <div class="modal__actions"><a class="btn btn--solid" href="assets/pdfs/filament-ppt.pdf" target="_blank" rel="noopener">Open PDF</a></div>
+    </div>
+  </div>
+
+  <div id="liaisonsModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="liaisonsTitle" hidden>
+    <div class="modal__box">
+      <div class="modal__head">
+        <h3 id="liaisonsTitle">Liaisons — Preview</h3>
+        <button class="modal__close" data-modal-close aria-label="Close">×</button>
+      </div>
+      <img src="assets/images/liaisons-ppt-thumb.jpg" alt="" onerror="handleImgError(this)">
+      <div class="modal__actions"><a class="btn btn--solid" href="assets/pdfs/liaisons-ppt.pdf" target="_blank" rel="noopener">Open PDF</a></div>
+    </div>
+  </div>
+
+  <div id="vlcModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="vlcTitle" hidden>
+    <div class="modal__box">
+      <div class="modal__head">
+        <h3 id="vlcTitle">VLC Brand Brief — Preview</h3>
+        <button class="modal__close" data-modal-close aria-label="Close">×</button>
+      </div>
+      <img src="assets/images/vlc-brief-cover.jpg" alt="" onerror="handleImgError(this)">
+      <div class="modal__actions"><a class="btn btn--solid" href="assets/pdfs/vlc-brand-brief.pdf" target="_blank" rel="noopener">Open PDF</a></div>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer" role="contentinfo">
+  <div class="container footer-grid">
+    <div>
+      <p class="footer-heading">Embark Digitals</p>
+      <p class="muted">Fast, modern websites, branding, and digital assets.</p>
+    </div>
+    <div>
+      <p class="footer-heading">Links</p>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="websites.html">Websites</a></li>
+              <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="footer-heading">Social</p>
+      <ul class="footer-links">
+        <li><a href="https://www.linkedin.com/" aria-label="LinkedIn">LinkedIn</a></li>
+        <li><a href="https://www.facebook.com/" aria-label="Facebook">Facebook</a></li>
+              <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <small>© <span id="year"></span> Ndumiso Yedwa. Designed by Embark Digitals.</small>
+  </div>
+</footer>
+
+</body>
+</html>
