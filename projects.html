@@ -1,19 +1,12 @@
-<!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
+<!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" href="assets/images/ndu-icon.png">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 <script defer src="js/script.js"></script>
-
-<title>Projects — Treehouse Techdegree</title>
-</head>
-<body>
-
-<header class="site-header" role="banner">
+<title>Projects — Treehouse Techdegree</title></head><body>
+<header class="site-header">
   <div class="container nav-container">
     <a class="brand" href="index.html" aria-label="Home">
       <img src="assets/images/ndu-icon.png" alt="Ndu icon logo" width="40" height="40" class="brand__logo">
@@ -27,6 +20,7 @@
 
     <nav id="siteNav" class="site-nav" aria-label="Primary">
       <ul class="site-nav__list">
+        <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="websites.html">Websites</a></li>
         <li><a href="graphics.html">Graphics</a></li>
@@ -34,245 +28,24 @@
         <li><a href="social.html">Social&nbsp;Media</a></li>
         <li><a href="projects.html">Projects</a></li>
         <li><a href="badges.html">Badges</a></li>
-              <li><a href="contact.html">Contact</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
   </div>
 </header>
 
-<main id="main" class="main">
-  <section class="section">
-    <div class="container narrow">
-      <h1>Projects — Treehouse Techdegree</h1>
-      <p class="muted">Each card includes a preview, optional audio, and a full description modal.</p>
-    </div>
-  </section>
-  <section class="section">
-    <div class="container">
-      <ol class="projects-list">
-        
-        <li class="project-card">
-          <div class="project-card__media">
-            <img src="assets/images/p1-thumb.jpg" alt="Project 1 thumbnail" onerror="handleImgError(this)">
-          </div>
-          <div class="project-card__body">
-            <h3><span class="muted">01</span> — Personal Profile Page</h3>
-            <p class="project-card__excerpt">A clean hero, skills, and projects grid. <button class="link-like" data-modal-open="p1Modal" aria-label="Read more about Personal Profile Page">Read more</button></p>
-            <div class="audio-row">
-              <audio controls preload="metadata" src="assets/audio/p1.mp3">
-                Your browser does not support the audio element.
-              </audio>
-            </div>
-            <div class="btn-row">
-              <a class="btn btn--solid" href="https://ndumiso-y.github.io/Project-1--Personal-Profile-Page/" target="_blank" rel="noopener">Go to website</a>
-            </div>
-          </div>
-        </li>
-        <div id="p1Modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="p1Title" hidden>
-          <div class="modal__box">
-            <div class="modal__head">
-              <h3 id="p1Title">Personal Profile Page — Details</h3>
-              <button class="modal__close" data-modal-close aria-label="Close">×</button>
-            </div>
-            <p>Built a fully responsive personal profile using semantic HTML5, simple utility classes, and accessible navigation.</p>
-          </div>
-        </div>
-        
-        <li class="project-card">
-          <div class="project-card__media">
-            <img src="assets/images/p2-thumb.jpg" alt="Project 2 thumbnail" onerror="handleImgError(this)">
-          </div>
-          <div class="project-card__body">
-            <h3><span class="muted">02</span> — Mobile-first Layout</h3>
-            <p class="project-card__excerpt">Responsive column-to-grid layout. <button class="link-like" data-modal-open="p2Modal" aria-label="Read more about Mobile-first Layout">Read more</button></p>
-            <div class="audio-row">
-              <audio controls preload="metadata" src="assets/audio/p2.mp3">
-                Your browser does not support the audio element.
-              </audio>
-            </div>
-            <div class="btn-row">
-              <a class="btn btn--solid" href="https://ndumiso-y.github.io/Project2--MobileFirstResponsiveLayout/" target="_blank" rel="noopener">Go to website</a>
-            </div>
-          </div>
-        </li>
-        <div id="p2Modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="p2Title" hidden>
-          <div class="modal__box">
-            <div class="modal__head">
-              <h3 id="p2Title">Mobile-first Layout — Details</h3>
-              <button class="modal__close" data-modal-close aria-label="Close">×</button>
-            </div>
-            <p>Practiced a mobile-first approach with flexbox and CSS grid, optimizing typography and spacing at tablet/desktop breakpoints.</p>
-          </div>
-        </div>
-        
-        <li class="project-card">
-          <div class="project-card__media">
-            <img src="assets/images/p3-thumb.jpg" alt="Project 3 thumbnail" onerror="handleImgError(this)">
-          </div>
-          <div class="project-card__body">
-            <h3><span class="muted">03</span> — Interactive Registration Form</h3>
-            <p class="project-card__excerpt">Client-side validation patterns. <button class="link-like" data-modal-open="p3Modal" aria-label="Read more about Interactive Registration Form">Read more</button></p>
-            <div class="audio-row">
-              <audio controls preload="metadata" src="assets/audio/p3.mp3">
-                Your browser does not support the audio element.
-              </audio>
-            </div>
-            <div class="btn-row">
-              <a class="btn btn--solid" href="https://ndumiso-y.github.io/Project-3/" target="_blank" rel="noopener">Go to website</a>
-            </div>
-          </div>
-        </li>
-        <div id="p3Modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="p3Title" hidden>
-          <div class="modal__box">
-            <div class="modal__head">
-              <h3 id="p3Title">Interactive Registration Form — Details</h3>
-              <button class="modal__close" data-modal-close aria-label="Close">×</button>
-            </div>
-            <p>Implemented inline validation messages, focus states, and conditional fields to enhance form UX and accessibility.</p>
-          </div>
-        </div>
-        
-        <li class="project-card">
-          <div class="project-card__media">
-            <img src="assets/images/p4-thumb.jpg" alt="Project 4 thumbnail" onerror="handleImgError(this)">
-          </div>
-          <div class="project-card__body">
-            <h3><span class="muted">04</span> — Web Style Guide (Sass)</h3>
-            <p class="project-card__excerpt">Reusable tokens and components. <button class="link-like" data-modal-open="p4Modal" aria-label="Read more about Web Style Guide (Sass)">Read more</button></p>
-            <div class="audio-row">
-              <audio controls preload="metadata" src="assets/audio/p4.mp3">
-                Your browser does not support the audio element.
-              </audio>
-            </div>
-            <div class="btn-row">
-              <a class="btn btn--solid" href="https://ndumiso-y.github.io/Project4---Web/" target="_blank" rel="noopener">Go to website</a>
-            </div>
-          </div>
-        </li>
-        <div id="p4Modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="p4Title" hidden>
-          <div class="modal__box">
-            <div class="modal__head">
-              <h3 id="p4Title">Web Style Guide (Sass) — Details</h3>
-              <button class="modal__close" data-modal-close aria-label="Close">×</button>
-            </div>
-            <p>Created a design system with Sass variables, mixins, and components to speed up future projects.</p>
-          </div>
-        </div>
-        
-        <li class="project-card">
-          <div class="project-card__media">
-            <img src="assets/images/p5-thumb.jpg" alt="Project 5 thumbnail" onerror="handleImgError(this)">
-          </div>
-          <div class="project-card__body">
-            <h3><span class="muted">05</span> — Photo Gallery</h3>
-            <p class="project-card__excerpt">Search and keyboard navigation. <button class="link-like" data-modal-open="p5Modal" aria-label="Read more about Photo Gallery">Read more</button></p>
-            <div class="audio-row">
-              <audio controls preload="metadata" src="assets/audio/p5.mp3">
-                Your browser does not support the audio element.
-              </audio>
-            </div>
-            <div class="btn-row">
-              <a class="btn btn--solid" href="https://ndumiso-y.github.io/Project5--photogallery/" target="_blank" rel="noopener">Go to website</a>
-            </div>
-          </div>
-        </li>
-        <div id="p5Modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="p5Title" hidden>
-          <div class="modal__box">
-            <div class="modal__head">
-              <h3 id="p5Title">Photo Gallery — Details</h3>
-              <button class="modal__close" data-modal-close aria-label="Close">×</button>
-            </div>
-            <p>Built a gallery with a search filter, keyboard controls, and a lightbox experience.</p>
-          </div>
-        </div>
-        
-        <li class="project-card">
-          <div class="project-card__media">
-            <img src="assets/images/p6-thumb.jpg" alt="Project 6 thumbnail" onerror="handleImgError(this)">
-          </div>
-          <div class="project-card__body">
-            <h3><span class="muted">06</span> — Game Show App</h3>
-            <p class="project-card__excerpt">Randomized phrase guessing game. <button class="link-like" data-modal-open="p6Modal" aria-label="Read more about Game Show App">Read more</button></p>
-            <div class="audio-row">
-              <audio controls preload="metadata" src="assets/audio/p6.mp3">
-                Your browser does not support the audio element.
-              </audio>
-            </div>
-            <div class="btn-row">
-              <a class="btn btn--solid" href="https://ndumiso-y.github.io/Project6--GameShowApp/" target="_blank" rel="noopener">Go to website</a>
-            </div>
-          </div>
-        </li>
-        <div id="p6Modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="p6Title" hidden>
-          <div class="modal__box">
-            <div class="modal__head">
-              <h3 id="p6Title">Game Show App — Details</h3>
-              <button class="modal__close" data-modal-close aria-label="Close">×</button>
-            </div>
-            <p>Used JS logic and DOM manipulation to build a fun keyboard-driven game.</p>
-          </div>
-        </div>
-        
-        <li class="project-card">
-          <div class="project-card__media">
-            <img src="assets/images/p7-thumb.jpg" alt="Project 7 thumbnail" onerror="handleImgError(this)">
-          </div>
-          <div class="project-card__body">
-            <h3><span class="muted">07</span> — Web App Dashboard</h3>
-            <p class="project-card__excerpt">Charts and notifications. <button class="link-like" data-modal-open="p7Modal" aria-label="Read more about Web App Dashboard">Read more</button></p>
-            <div class="audio-row">
-              <audio controls preload="metadata" src="assets/audio/p7.mp3">
-                Your browser does not support the audio element.
-              </audio>
-            </div>
-            <div class="btn-row">
-              <a class="btn btn--solid" href="https://ndumiso-y.github.io/https---github.com-Ndumiso-Y-Project7--WebAppDashBoard/" target="_blank" rel="noopener">Go to website</a>
-            </div>
-          </div>
-        </li>
-        <div id="p7Modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="p7Title" hidden>
-          <div class="modal__box">
-            <div class="modal__head">
-              <h3 id="p7Title">Web App Dashboard — Details</h3>
-              <button class="modal__close" data-modal-close aria-label="Close">×</button>
-            </div>
-            <p>Designed a dashboard with chart widgets, alerts, and settings stored in localStorage.</p>
-          </div>
-        </div>
-        
-        <li class="project-card">
-          <div class="project-card__media">
-            <img src="assets/images/p8-thumb.jpg" alt="Project 8 thumbnail" onerror="handleImgError(this)">
-          </div>
-          <div class="project-card__body">
-            <h3><span class="muted">08</span> — API Employee Directory</h3>
-            <p class="project-card__excerpt">Fetch API + modal profiles. <button class="link-like" data-modal-open="p8Modal" aria-label="Read more about API Employee Directory">Read more</button></p>
-            <div class="audio-row">
-              <audio controls preload="metadata" src="assets/audio/p8.mp3">
-                Your browser does not support the audio element.
-              </audio>
-            </div>
-            <div class="btn-row">
-              <a class="btn btn--solid" href="https://ndumiso-y.github.io/Project-8--API--Employee---Directory/" target="_blank" rel="noopener">Go to website</a>
-            </div>
-          </div>
-        </li>
-        <div id="p8Modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="p8Title" hidden>
-          <div class="modal__box">
-            <div class="modal__head">
-              <h3 id="p8Title">API Employee Directory — Details</h3>
-              <button class="modal__close" data-modal-close aria-label="Close">×</button>
-            </div>
-            <p>Fetched employee data, implemented a modal detail view, and added next/prev navigation.</p>
-          </div>
-        </div>
-        
-      </ol>
-    </div>
-  </section>
-</main>
-
-<footer class="site-footer" role="contentinfo">
+<main class="main"><section class="section"><div class="container narrow"><h1>Projects — Treehouse Techdegree</h1><p class="muted">Each card includes a preview, optional audio, and a full description modal.</p></div></section>
+<section class="section"><div class="container"><ol class="projects-list">
+<li class="project-card"><div class="project-card__media"><img src="assets/images/p1-thumb.jpg" alt="Project 1" onerror="handleImgError(this)"></div><div class="project-card__body"><h3><span class="muted">01</span> — Personal Profile Page</h3><p class="project-card__excerpt">A clean hero, skills, and projects grid. <button class="link-like" data-modal-open="p1Modal" type="button">Read more</button></p><div class="audio-row"><audio controls preload="metadata" src="assets/audio/p1.mp3"></audio></div><div class="btn-row"><a class="btn btn--solid" href="https://ndumiso-y.github.io/Project-1--Personal-Profile-Page/" target="_blank" rel="noopener">Go to website</a></div></div><div id="p1Modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="p1Title" hidden><div class="modal__box"><div class="modal__head"><h3 id="p1Title">Personal Profile Page — Details</h3><button class="modal__close" data-modal-close aria-label="Close" type="button">×</button></div><p>Built a fully responsive personal profile using semantic HTML5, simple utility classes, and accessible navigation.</p></div></div></li>
+<li class="project-card"><div class="project-card__media"><img src="assets/images/p2-thumb.jpg" alt="Project 2" onerror="handleImgError(this)"></div><div class="project-card__body"><h3><span class="muted">02</span> — Mobile-first Layout</h3><p class="project-card__excerpt">Responsive column-to-grid layout. <button class="link-like" data-modal-open="p2Modal" type="button">Read more</button></p><div class="audio-row"><audio controls preload="metadata" src="assets/audio/p2.mp3"></audio></div><div class="btn-row"><a class="btn btn--solid" href="https://ndumiso-y.github.io/Project2--MobileFirstResponsiveLayout/" target="_blank" rel="noopener">Go to website</a></div></div><div id="p2Modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="p2Title" hidden><div class="modal__box"><div class="modal__head"><h3 id="p2Title">Mobile-first Layout — Details</h3><button class="modal__close" data-modal-close aria-label="Close" type="button">×</button></div><p>Practiced a mobile-first approach with flexbox and CSS grid, optimizing typography and spacing at tablet/desktop breakpoints.</p></div></div></li>
+<li class="project-card"><div class="project-card__media"><img src="assets/images/p3-thumb.jpg" alt="Project 3" onerror="handleImgError(this)"></div><div class="project-card__body"><h3><span class="muted">03</span> — Interactive Registration Form</h3><p class="project-card__excerpt">Client-side validation patterns. <button class="link-like" data-modal-open="p3Modal" type="button">Read more</button></p><div class="audio-row"><audio controls preload="metadata" src="assets/audio/p3.mp3"></audio></div><div class="btn-row"><a class="btn btn--solid" href="https://ndumiso-y.github.io/Project-3/" target="_blank" rel="noopener">Go to website</a></div></div><div id="p3Modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="p3Title" hidden><div class="modal__box"><div class="modal__head"><h3 id="p3Title">Interactive Registration Form — Details</h3><button class="modal__close" data-modal-close aria-label="Close" type="button">×</button></div><p>Implemented inline validation, focus states, and conditional fields to enhance form UX.</p></div></div></li>
+<li class="project-card"><div class="project-card__media"><img src="assets/images/p4-thumb.jpg" alt="Project 4" onerror="handleImgError(this)"></div><div class="project-card__body"><h3><span class="muted">04</span> — Web Style Guide (Sass)</h3><p class="project-card__excerpt">Reusable tokens and components. <button class="link-like" data-modal-open="p4Modal" type="button">Read more</button></p><div class="audio-row"><audio controls preload="metadata" src="assets/audio/p4.mp3"></audio></div><div class="btn-row"><a class="btn btn--solid" href="https://ndumiso-y.github.io/Project4---Web/" target="_blank" rel="noopener">Go to website</a></div></div><div id="p4Modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="p4Title" hidden><div class="modal__box"><div class="modal__head"><h3 id="p4Title">Web Style Guide (Sass) — Details</h3><button class="modal__close" data-modal-close aria-label="Close" type="button">×</button></div><p>Created a design system with Sass variables, mixins, and components to speed up future projects.</p></div></div></li>
+<li class="project-card"><div class="project-card__media"><img src="assets/images/p5-thumb.jpg" alt="Project 5" onerror="handleImgError(this)"></div><div class="project-card__body"><h3><span class="muted">05</span> — Photo Gallery</h3><p class="project-card__excerpt">Search and keyboard navigation. <button class="link-like" data-modal-open="p5Modal" type="button">Read more</button></p><div class="audio-row"><audio controls preload="metadata" src="assets/audio/p5.mp3"></audio></div><div class="btn-row"><a class="btn btn--solid" href="https://ndumiso-y.github.io/Project5--photogallery/" target="_blank" rel="noopener">Go to website</a></div></div><div id="p5Modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="p5Title" hidden><div class="modal__box"><div class="modal__head"><h3 id="p5Title">Photo Gallery — Details</h3><button class="modal__close" data-modal-close aria-label="Close" type="button">×</button></div><p>Built a gallery with a search filter, keyboard controls, and a lightbox experience.</p></div></div></li>
+<li class="project-card"><div class="project-card__media"><img src="assets/images/p6-thumb.jpg" alt="Project 6" onerror="handleImgError(this)"></div><div class="project-card__body"><h3><span class="muted">06</span> — Game Show App</h3><p class="project-card__excerpt">Randomized phrase guessing game. <button class="link-like" data-modal-open="p6Modal" type="button">Read more</button></p><div class="audio-row"><audio controls preload="metadata" src="assets/audio/p6.mp3"></audio></div><div class="btn-row"><a class="btn btn--solid" href="https://ndumiso-y.github.io/Project6--GameShowApp/" target="_blank" rel="noopener">Go to website</a></div></div><div id="p6Modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="p6Title" hidden><div class="modal__box"><div class="modal__head"><h3 id="p6Title">Game Show App — Details</h3><button class="modal__close" data-modal-close aria-label="Close" type="button">×</button></div><p>Used JS logic and DOM manipulation to build a fun keyboard-driven game.</p></div></div></li>
+<li class="project-card"><div class="project-card__media"><img src="assets/images/p7-thumb.jpg" alt="Project 7" onerror="handleImgError(this)"></div><div class="project-card__body"><h3><span class="muted">07</span> — Web App Dashboard</h3><p class="project-card__excerpt">Charts and notifications. <button class="link-like" data-modal-open="p7Modal" type="button">Read more</button></p><div class="audio-row"><audio controls preload="metadata" src="assets/audio/p7.mp3"></audio></div><div class="btn-row"><a class="btn btn--solid" href="https://ndumiso-y.github.io/https---github.com-Ndumiso-Y-Project7--WebAppDashBoard/" target="_blank" rel="noopener">Go to website</a></div></div><div id="p7Modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="p7Title" hidden><div class="modal__box"><div class="modal__head"><h3 id="p7Title">Web App Dashboard — Details</h3><button class="modal__close" data-modal-close aria-label="Close" type="button">×</button></div><p>Designed a dashboard with chart widgets, alerts, and settings stored in localStorage.</p></div></div></li>
+<li class="project-card"><div class="project-card__media"><img src="assets/images/p8-thumb.jpg" alt="Project 8" onerror="handleImgError(this)"></div><div class="project-card__body"><h3><span class="muted">08</span> — API Employee Directory</h3><p class="project-card__excerpt">Fetch API + modal profiles. <button class="link-like" data-modal-open="p8Modal" type="button">Read more</button></p><div class="audio-row"><audio controls preload="metadata" src="assets/audio/p8.mp3"></audio></div><div class="btn-row"><a class="btn btn--solid" href="https://ndumiso-y.github.io/Project-8--API--Employee---Directory/" target="_blank" rel="noopener">Go to website</a></div></div><div id="p8Modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="p8Title" hidden><div class="modal__box"><div class="modal__head"><h3 id="p8Title">API Employee Directory — Details</h3><button class="modal__close" data-modal-close aria-label="Close" type="button">×</button></div><p>Fetched employee data, implemented a modal detail view, and added next/prev navigation.</p></div></div></li>
+</ol></div></section></main>
+<footer class="site-footer">
   <div class="container footer-grid">
     <div>
       <p class="footer-heading">Embark Digitals</p>
@@ -284,7 +57,7 @@
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="websites.html">Websites</a></li>
-              <li><a href="contact.html">Contact</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
     </div>
     <div>
@@ -292,7 +65,8 @@
       <ul class="footer-links">
         <li><a href="https://www.linkedin.com/" aria-label="LinkedIn">LinkedIn</a></li>
         <li><a href="https://www.facebook.com/" aria-label="Facebook">Facebook</a></li>
-              <li><a href="contact.html">Contact</a></li>
+        <li><a href="https://www.instagram.com/" aria-label="Instagram">Instagram</a></li>
+        <li><a href="https://twitter.com/" aria-label="X">X</a></li>
       </ul>
     </div>
   </div>
@@ -300,6 +74,4 @@
     <small>© <span id="year"></span> Ndumiso Yedwa. Designed by Embark Digitals.</small>
   </div>
 </footer>
-
-</body>
-</html>
+</body></html>

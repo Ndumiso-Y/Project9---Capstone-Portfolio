@@ -28,7 +28,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const y = qs('#year'); if(y) y.textContent = new Date().getFullYear();
 
-  // Tooltips helper on mobile
   const skillInfo = qs('#skillInfo');
   const skillNotes = qs('#skillNotes');
   if(skillInfo && skillNotes){
@@ -39,7 +38,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Delegated modal open handler
   document.addEventListener('click', (ev) => {
     const trigger = ev.target.closest('[data-modal-open]');
     if(!trigger) return;
@@ -62,7 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.body.style.overflow = '';
   }
 
-  // Lightbox gallery (Design Work)
+  // Lightbox
   const overlay = qs('#lightboxOverlay');
   if(overlay){
     const imgEl = overlay.querySelector('.lightbox__img');
@@ -72,55 +70,26 @@ document.addEventListener('DOMContentLoaded', () => {
     let list = []; let index = 0;
 
     qsa('.gallery img').forEach((img,i,arr)=>{
-      img.addEventListener('click', () => {
-        list = arr;
-        index = i;
-        openLightbox();
-      });
+      img.addEventListener('click', () => { list = arr; index = i; openLightbox(); });
     });
     qsa('.lightbox[data-src]').forEach((btn, i, arr)=>{
-      btn.addEventListener('click', () => {
-        list = arr.map(b=>({src: b.getAttribute('data-src')}));
-        index = i;
-        openLightbox(true);
-      });
+      btn.addEventListener('click', () => { list = arr.map(b=>({src: b.getAttribute('data-src')})); index = i; openLightbox(true); });
     });
 
     function setSrc(src){ imgEl.src = src; }
     function openLightbox(custom=false){
-      overlay.removeAttribute('hidden');
-      overlay.setAttribute('aria-hidden','false');
-      document.body.style.overflow = 'hidden';
+      overlay.removeAttribute('hidden'); overlay.setAttribute('aria-hidden','false'); document.body.style.overflow = 'hidden';
       setTimeout(()=> overlay.focus(), 0);
       if(custom){ setSrc(list[index].src); } else { setSrc(list[index].src || list[index].getAttribute('src')); }
     }
-    function hideOverlay(){
-      overlay.setAttribute('hidden','');
-      overlay.setAttribute('aria-hidden','true');
-      document.body.style.overflow = '';
-      imgEl.removeAttribute('src');
-    }
-    function move(delta){
-      if(!list || !list.length) return;
-      index = (index + delta + list.length) % list.length;
-      if(list[index].src) setSrc(list[index].src); else setSrc(list[index].getAttribute('src'));
-    }
-    prev?.addEventListener('click', ()=>move(-1));
-    next?.addEventListener('click', ()=>move(1));
-    close?.addEventListener('click', hideOverlay);
+    function hideOverlay(){ overlay.setAttribute('hidden',''); overlay.setAttribute('aria-hidden','true'); document.body.style.overflow = ''; imgEl.removeAttribute('src'); }
+    function move(delta){ if(!list || !list.length) return; index = (index + delta + list.length) % list.length; if(list[index].src) setSrc(list[index].src); else setSrc(list[index].getAttribute('src')); }
+    prev?.addEventListener('click', ()=>move(-1)); next?.addEventListener('click', ()=>move(1)); close?.addEventListener('click', hideOverlay);
     overlay.addEventListener('click', (e)=>{ if(e.target===overlay) hideOverlay(); });
-    imgEl?.addEventListener('dblclick', hideOverlay);
-    document.addEventListener('keydown', (e)=>{
-      if(overlay.hasAttribute('hidden')) return;
-      if(e.key==='Escape') hideOverlay();
-      if(e.key==='ArrowLeft') move(-1);
-      if(e.key==='ArrowRight') move(1);
-    });
+    document.addEventListener('keydown', (e)=>{ if(overlay.hasAttribute('hidden')) return; if(e.key==='Escape') hideOverlay(); if(e.key==='ArrowLeft') move(-1); if(e.key==='ArrowRight') move(1); });
   }
 
   // One-audio-at-a-time
   const audios = qsa('audio');
-  audios.forEach(a => a.addEventListener('play', () => {
-    audios.forEach(b => { if(b!==a) b.pause() });
-  }));
+  audios.forEach(a => a.addEventListener('play', () => { audios.forEach(b => { if(b!==a) b.pause() }); }));
 });

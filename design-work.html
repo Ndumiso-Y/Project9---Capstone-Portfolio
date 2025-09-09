@@ -1,19 +1,17 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="icon" href="assets/images/ndu-icon.png">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
-<script defer src="js/script.js"></script>
-
-<title>Design Work — Ndumiso Yedwa</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="assets/images/ndu-icon.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/script.js"></script>
+  <title>Design Work — Ndumiso Yedwa</title>
 </head>
 <body>
-
-<header class="site-header" role="banner">
+<header class="site-header">
   <div class="container nav-container">
     <a class="brand" href="index.html" aria-label="Home">
       <img src="assets/images/ndu-icon.png" alt="Ndu icon logo" width="40" height="40" class="brand__logo">
@@ -27,6 +25,7 @@
 
     <nav id="siteNav" class="site-nav" aria-label="Primary">
       <ul class="site-nav__list">
+        <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="websites.html">Websites</a></li>
         <li><a href="graphics.html">Graphics</a></li>
@@ -34,23 +33,25 @@
         <li><a href="social.html">Social&nbsp;Media</a></li>
         <li><a href="projects.html">Projects</a></li>
         <li><a href="badges.html">Badges</a></li>
-              <li><a href="contact.html">Contact</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
   </div>
 </header>
 
-<main id="main" class="main">
+<main class="main">
   <section class="section">
     <div class="container narrow">
       <h1>Design Work</h1>
       <p class="muted">Tap to view in a lightbox.</p>
     </div>
   </section>
+
   <section class="section">
+    <h2 class="sr-only">Artwork Gallery</h2>
     <div class="container">
       <div class="gallery" data-gallery="tvei">
-        <figure class="gallery__item"><img src="assets/images/tvei-flyer-01.jpg" alt="TVEI Opening Event flyer 1" onerror="handleImgError(this)"></figure>
+        <figure class="gallery__item"><img src="assets/images/tvei-flyer-01.jpg" alt="TVEI flyer 1" onerror="handleImgError(this)"></figure>
         <figure class="gallery__item"><img src="assets/images/tvei-flyer-02.jpg" alt="TVEI flyer 2" onerror="handleImgError(this)"></figure>
         <figure class="gallery__item"><img src="assets/images/tvei-flyer-03.jpg" alt="TVEI flyer 3" onerror="handleImgError(this)"></figure>
         <figure class="gallery__item"><img src="assets/images/tvei-flyer-04.jpg" alt="TVEI flyer 4" onerror="handleImgError(this)"></figure>
@@ -60,43 +61,39 @@
 
       <div class="card-grid three mtop">
         <article class="card">
-          <button class="card__media lightbox" data-src="assets/images/tvei-vine-bottle.jpg">
-            <img src="assets/images/tvei-vine-bottle.jpg" alt="Vine to Bottle poster" onerror="handleImgError(this)">
+          <button class="card__media lightbox" data-src="assets/images/tvei-vine-bottle.jpg" type="button">
+            <img src="assets/images/tvei-vine-bottle.jpg" alt="Vine to Bottle" onerror="handleImgError(this)">
           </button>
-          <div class="card__body">
-            <h3 class="card__title">Vine to Bottle Poster</h3>
-          </div>
+          <div class="card__body"><h3 class="card__title">Vine to Bottle Poster</h3></div>
         </article>
+
         <article class="card">
-          <button class="card__media lightbox" data-src="assets/images/hakem-banner.jpg">
+          <button class="card__media lightbox" data-src="assets/images/hakem-banner.jpg" type="button">
             <img src="assets/images/hakem-banner.jpg" alt="Hakem banner" onerror="handleImgError(this)">
           </button>
-          <div class="card__body">
-            <h3 class="card__title">Hakem Banner</h3>
-          </div>
+          <div class="card__body"><h3 class="card__title">Hakem Banner</h3></div>
         </article>
+
         <article class="card">
-          <button class="card__media lightbox" data-src="assets/images/hakem-bike.jpg">
-            <img src="assets/images/hakem-bike.jpg" alt="Hakem bike design" onerror="handleImgError(this)">
+          <button class="card__media lightbox" data-src="assets/images/hakem-bike.jpg" type="button">
+            <img src="assets/images/hakem-bike.jpg" alt="Hakem bike" onerror="handleImgError(this)">
           </button>
-          <div class="card__body">
-            <h3 class="card__title">Hakem Bicycle</h3>
-          </div>
+          <div class="card__body"><h3 class="card__title">Hakem Bicycle</h3></div>
         </article>
       </div>
     </div>
   </section>
 
   <!-- Lightbox overlay -->
-  <div class="lightbox__overlay" id="lightboxOverlay" hidden aria-hidden="true">
-    <button class="lightbox__close" aria-label="Close">×</button>
-    <button class="lightbox__nav lightbox__prev" aria-label="Previous">‹</button>
-    <img class="lightbox__img" alt="Expanded artwork">
-    <button class="lightbox__nav lightbox__next" aria-label="Next">›</button>
+  <div class="lightbox__overlay" id="lightboxOverlay" hidden>
+    <button class="lightbox__close" aria-label="Close" type="button">×</button>
+    <button class="lightbox__nav lightbox__prev" aria-label="Previous" type="button">‹</button>
+    <img class="lightbox__img" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" alt="Expanded artwork">
+    <button class="lightbox__nav lightbox__next" aria-label="Next" type="button">›</button>
   </div>
 </main>
 
-<footer class="site-footer" role="contentinfo">
+<footer class="site-footer">
   <div class="container footer-grid">
     <div>
       <p class="footer-heading">Embark Digitals</p>
@@ -108,7 +105,7 @@
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="websites.html">Websites</a></li>
-              <li><a href="contact.html">Contact</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
     </div>
     <div>
@@ -116,7 +113,8 @@
       <ul class="footer-links">
         <li><a href="https://www.linkedin.com/" aria-label="LinkedIn">LinkedIn</a></li>
         <li><a href="https://www.facebook.com/" aria-label="Facebook">Facebook</a></li>
-              <li><a href="contact.html">Contact</a></li>
+        <li><a href="https://www.instagram.com/" aria-label="Instagram">Instagram</a></li>
+        <li><a href="https://twitter.com/" aria-label="X">X</a></li>
       </ul>
     </div>
   </div>
@@ -124,6 +122,5 @@
     <small>© <span id="year"></span> Ndumiso Yedwa. Designed by Embark Digitals.</small>
   </div>
 </footer>
-
 </body>
 </html>
